@@ -1,7 +1,28 @@
-.rojo{
+/* .rojo{
     color: #C5A253;
 }
 
 .retoques{
     color: #D72638;
+} */
+
+.colorNav{
+    background: #282828;
+    
+}
+
+.colorSobreMi{
+    background-color: #282828;
+}
+
+body{
+    /* background-color: #0B0B0B ; */
+    background: linear-gradient(180deg, #222224, #1A1A1A);
+    font-family: 'Poppins', sans-serif;
+}
+
+.redondo{
+    border-radius: 30px; /* o 999px para "super redondo" */
+    padding: 8px 20px;
+    font-weight: 600;
 }

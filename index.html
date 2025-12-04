@@ -4,41 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/50cc47efd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<nav class="navbar bg-body">
-    <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
+<nav class="navbar colorNav shadow">
+    <div class="container-fluid text-light">
+        <a class="navbar-brand text-light">Navbar</a>
         <div class="d-flex">
             <ul class="navbar-nav d-flex flex-row">
                 <li class="me-5">
-                    <a class="nav-link" href="#">Acerca de mi</a>
+                    <a class="nav-link text-light" href="#">Acerca de mi</a>
                 </li>
                 <li class="me-5">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link text-light" href="#">Proyectos</a>
                 </li>
                 <li class="me-5">
-                    <a class="nav-link" href="#">Contactame</a>
+                    <a class="nav-link text-light" href="#">Contactame</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section id="sobreMi" class="container my-5">
-    <div class="row">
+<section id="presentacion" class="container">
+    <div class="row colorSobreMi py-5">
         <div class="col-md-8 mx-auto">
-            <h3 class="display-4 text-center rojo">Desarrollador de Software</h3>
-            <h2 class="display-2 text-center retoques">Enzo Cruz</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatibus quo iure a aut natus quasi ullam tempora modi perspiciatis recusandae quos illo sunt, veniam cumque, autem ipsum! Itaque, nihil.</p>
+            <h3 class="display-4 text-center text-light fw-normal">Desarrollador de Software</h3>
+            <h2 class="display-2 text-center text-light fw-semibold">Enzo Cruz</h2>
+            <div class="d-flex justify-content-center gap-3 mt-5">
+                <a class="btn btn-primary redondo shadow" target="_blank" href="https://github.com/Enzo887">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub</a>
+                <a class="btn btn-primary redondo shadow" target="_blank" href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Linkedin</a>
+                <a class="btn btn-primary redondo shadow" target="_blank" href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    Mail</a>
+            </div>
+
         </div>
     </div>
     
     <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-8 mx-auto text-light">
             <h3>Tecnologias</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatibus quo iure a aut natus quasi ullam tempora modi perspiciatis recusandae quos illo sunt, veniam cumque, autem ipsum! Itaque, nihil.</p>
             <div class="row justify-content-center g-4 flex-wrap">

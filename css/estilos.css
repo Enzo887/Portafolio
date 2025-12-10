@@ -15,10 +15,14 @@
     background-color: #282828;
 }
 
-body{
-    /* background-color: #0B0B0B ; */
-    background: linear-gradient(180deg, #222224, #1A1A1A);
-    font-family: 'Poppins', sans-serif;
+body {
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at top,
+        #2563eb 0%,
+        #1e3a8a 40%,
+        #020617 80%
+    );
 }
 
 .redondo{

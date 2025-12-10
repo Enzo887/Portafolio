@@ -1,32 +1,40 @@
-/* .rojo{
-    color: #C5A253;
-}
-
-.retoques{
-    color: #D72638;
-} */
-
 .colorNav{
-    background: #282828;
+    background: #232946;
     
 }
 
-.colorSobreMi{
-    background-color: #282828;
+body {
+    background-color: #232946;
+    font-family: Poppins;
 }
 
-body {
-    min-height: 100vh;
-    background: radial-gradient(
-        circle at top,
-        #2563eb 0%,
-        #1e3a8a 40%,
-        #020617 80%
-    );
-}
+p{
+    color: #b8c1ec;
+}   
 
 .redondo{
-    border-radius: 30px; /* o 999px para "super redondo" */
+    border-radius: 30px;
     padding: 8px 20px;
-    font-weight: 600;
+}
+
+.card {
+  background-color: #0F172AD9;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+}
+
+.boton{
+    background-color: #4e4f5f;
+    border: solid 1px #b8c1ec;
+    color: white;
+}
+.boton:hover{
+    background-color: #34343f;
+    border: solid 1px #34343f;
+    color: white;
+}
+
+.resaltado{
+    color: #f2d760;
 }

@@ -1,9 +1,13 @@
+html {
+    scroll-padding-top: 70px;
+}
 .colorNav{
     background: #232946;
     
 }
 
 body {
+    padding-top: 70px;
     background-color: #232946;
     font-family: Poppins;
 }
@@ -12,29 +16,46 @@ p{
     color: #b8c1ec;
 }   
 
-.redondo{
-    border-radius: 30px;
-    padding: 8px 20px;
-}
-
 .card {
-  background-color: #0F172AD9;
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  color: #e5e7eb;
-  backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+} 
+
+.btn {
+    /* border-radius: 30px; */
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    backdrop-filter: blur(8px); 
+    transition: .3s;
 }
 
-.boton{
-    background-color: #4e4f5f;
-    border: solid 1px #b8c1ec;
-    color: white;
-}
-.boton:hover{
-    background-color: #34343f;
-    border: solid 1px #34343f;
-    color: white;
+.btn:hover {
+    /* transform: translateY(-3px); */
+    transform: scale(1.1);
+    color: #D3D3D3;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .resaltado{
     color: #f2d760;
 }
+
+#tecnologias img{
+    width: 80px;
+    height: 80px;
+    /* transition: transform .2s ease-in-out; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #tecnologias img:hover{
+    transform: scale(1.1);
+} */

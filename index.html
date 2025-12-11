@@ -10,20 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/50cc47efd8.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
 <body>
 
-<nav class="navbar colorNav shadow">
+<nav class="navbar colorNav shadow fixed-top">
     <div class="container-fluid d-flex justify-content-center">
         <ul class="navbar-nav d-flex flex-row">
             <li class="me-5">
-                <a class="nav-link text-light" href="#">Acerca de mi</a>
+                <a class="nav-link text-light" href="#presentacion">Inicio</a>
             </li>
             <li class="me-5">
-                <a class="nav-link text-light" href="#">Proyectos</a>
+                <a class="nav-link text-light" href="#sobreMi">Acerca de mi</a>
+            </li>
+            <li class="me-5">
+                <a class="nav-link text-light" href="#proyectos">Proyectos</a>
             </li>
             <li>
-                <a class="nav-link text-light" href="#">Contactame</a>
+                <a class="nav-link text-light" href="#tecnologias">Tecnologías</a>
             </li>
         </ul>
     </div>
@@ -36,17 +42,16 @@
             <h2 class="text-light fw-semibold">Hola, soy Enzo Cruz</h2>
             <p>Estudiante avanzado de la <span class="resaltado">Tecnicatura en Desarrollo de Software</span>, de Buenos Aires, Argentina. Actualmente en búsqueda de mi primer empleo en IT como Desarrollador Trainee / Junior.</p>
             <div class="d-flex gap-3 mt-5">
-                <a class="btn boton redondo shadow" target="_blank" href="https://github.com/Enzo887">
+                <a class="btn rounded-5 shadow" target="_blank" href="https://github.com/Enzo887">
                     <i class="fa-brands fa-github"></i>
                     GitHub</a>
-                <a class="btn boton redondo shadow" target="_blank" href="#">
+                <a class="btn rounded-5 shadow" target="_blank" href="#">
                     <i class="fa-brands fa-linkedin"></i>
                     Linkedin</a>
-                <a class="btn boton redondo shadow" target="_blank" href="#">
+                <a class="btn rounded-5 shadow" target="_blank" href="#">
                     <i class="fa-solid fa-envelope"></i>
-                    Mail</a>
+                    CV</a>
             </div>
-
         </div>
     </div>
 </section>
@@ -72,13 +77,13 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sistema de Inventario</h5>
+                                    <h5 class="card-title text-light">Sistema de Inventario</h5>
                                     <p class="card-text">
                                         Aplicación de escritorio en C# para gestionar productos con categorías y ventas,
                                         pudiendo ver las ventas diarias de un día a elección.
                                     </p>
                                     <a href="https://github.com/Enzo887/SistemaDeInventario"
-                                    class="btn btn-primary">
+                                    class="btn">
                                     Código
                                     </a>
                                 </div>
@@ -99,15 +104,22 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sistema de Inventario</h5>
+                                    <h5 class="card-title text-light">API REST de películas</h5>
                                     <p class="card-text">
                                         Aplicación de escritorio en C# para gestionar productos con categorías y ventas,
                                         pudiendo ver las ventas diarias de un día a elección.
                                     </p>
-                                    <a href="https://github.com/Enzo887/SistemaDeInventario"
-                                    class="btn btn-primary">
-                                    Código
-                                    </a>
+                                    <div class="d-flex gap-3">
+                                        <a target="_blank" href="https://github.com/Enzo887/SistemaDeInventario"
+                                        class="btn">
+                                        Código
+                                        </a>
+                                        <a target="_blank" href="#"
+                                        class="btn">
+                                        Ver
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -124,25 +136,29 @@
     <div class="row">
         <div class="col-md-8 mx-auto text-light">
             <h3 class="text-light fw-normal mb-4">
-                <i class="fa-solid fa-code"></i> Tecnologias
+                <i class="fa-solid fa-code"></i> Tecnologías
             </h3>
             <p>En mi trayectoria del desarrollo web durante mi carrera</p>
             <div class="row justify-content-center g-4 flex-wrap">
                 <div class="col-12 col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="text-center">Frontend</h2>
+                            <h2 class="text-center text-light">Frontend</h2>
                             <div class="row">
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                                     <p class="text-center">HTML</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                                     <p class="text-center">CSS</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                                     <p class="text-center">JavaScript</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
                                     <p class="text-center">Bootstrap</p>
                                 </div>
                                 
@@ -154,22 +170,23 @@
                 <div class="col-12 col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="text-center">Backend</h2>
+                            <h2 class="text-center text-light">Backend</h2>
                             <div class="row">
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
                                     <p class="text-center">C#</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
                                     <p class="text-center">PHP</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
-                                    <p class="text-center">MySQL</p>
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-plain.svg" />
+                                    <p class="text-center">SQLite</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
                                     <p class="text-center">SQL</p>
-                                </div>
-                                <div class="col-md-4 mx-auto">
-                                    <p class="text-center">SQLServer</p>
                                 </div>
                             </div>
                         </div>
@@ -179,18 +196,22 @@
                 <div class="col-12 col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="text-center">Aprendiendo</h2>
+                            <h2 class="text-center text-light">Aprendiendo</h2>
                             <div class="row">
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
                                     <p class="text-center">NodeJS</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                                     <p class="text-center">ReactJS</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
                                     <p class="text-center">MongoDB</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
                                     <p class="text-center">TypeScript</p>
                                 </div>
                             </div>
@@ -201,17 +222,25 @@
                 <div class="col-12 col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="text-center">Herramientas</h2>
+                            <h2 class="text-center text-light">Herramientas</h2>
                             <div class="row">
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
                                     <p class="text-center">Git</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
                                     <p class="text-center">GitHub</p>
                                 </div>
-                                <div class="col-md-4 mx-auto">
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
                                     <p class="text-center">VSCode</p>
                                 </div>
+                                <div class="col-6 mx-auto">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"/>
+                                    <p class="text-center">VS</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

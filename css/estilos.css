@@ -1,32 +1,61 @@
-/* .rojo{
-    color: #C5A253;
+html {
+    scroll-padding-top: 70px;
 }
-
-.retoques{
-    color: #D72638;
-} */
-
 .colorNav{
-    background: #282828;
+    background: #232946;
     
 }
 
-.colorSobreMi{
-    background-color: #282828;
-}
-
 body {
-    min-height: 100vh;
-    background: radial-gradient(
-        circle at top,
-        #2563eb 0%,
-        #1e3a8a 40%,
-        #020617 80%
-    );
+    padding-top: 70px;
+    background-color: #232946;
+    font-family: Poppins;
 }
 
-.redondo{
-    border-radius: 30px; /* o 999px para "super redondo" */
-    padding: 8px 20px;
-    font-weight: 600;
+p{
+    color: #b8c1ec;
+}   
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: .2s ease-in-out;
 }
+.card:hover {
+    transform: translateY(-5px);
+} 
+
+.btn {
+    /* border-radius: 30px; */
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    backdrop-filter: blur(8px); 
+    transition: .3s;
+}
+
+.btn:hover {
+    /* transform: translateY(-3px); */
+    transform: scale(1.1);
+    color: #D3D3D3;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.resaltado{
+    color: #f2d760;
+}
+
+#tecnologias img{
+    width: 80px;
+    height: 80px;
+    /* transition: transform .2s ease-in-out; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #tecnologias img:hover{
+    transform: scale(1.1);
+} */

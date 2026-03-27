@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Enzo Cruz - Portafolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,45 +13,77 @@
     <script src="https://kit.fontawesome.com/50cc47efd8.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="/js/script.js" defer></script>
 
 </head>
 <body>
 
 <nav class="navbar colorNav shadow fixed-top">
-    <div class="container-fluid d-flex justify-content-center">
-        <ul class="navbar-nav d-flex flex-row gap-4">
-            <li>
-                <a class="nav-link text-light" href="#presentacion">Inicio</a>
-            </li>
-            <li>
-                <a class="nav-link text-light" href="#sobreMi">Acerca de mi</a>
-            </li>
-            <li>
-                <a class="nav-link text-light" href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-                <a class="nav-link text-light" href="#tecnologias">Tecnologías</a>
-            </li>
-        </ul>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <ul class="navbar-nav d-flex flex-row gap-4 navbar-links">
+        <li><a class="nav-link text-light" href="#presentacion">Inicio</a></li>
+        <li><a class="nav-link text-light" href="#sobreMi">Acerca de mi</a></li>
+        <li><a class="nav-link text-light" href="#proyectos">Proyectos</a></li>
+        <li><a class="nav-link text-light" href="#tecnologias">Tecnologías</a></li>
+    </ul>
+
+    <div class="d-flex align-items-center iconos-navbar">
+
+      <a href="/cv.pdf" download>
+        <i class="bi bi-file-earmark-arrow-down"></i>
+        <span class="ps-1">cv</span>
+      </a>
+
+      <span class="separador">|</span>
+
+      <div class="d-flex gap-3">
+        <a href="https://wa.me/5491141915691" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/enzo-cruz-078248272" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/Enzo887" target="_blank">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a class="email-copy">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="copiado">Email copiado</span>
+        </a>
+      </div>
+
+      <span class="separador">|</span>
+
     </div>
+  </div>
 </nav>
 
 
 <section id="presentacion" class="container">
     <div class="row py-5 mt-5">
-        <div class="col-md-8 mx-auto">
-            <h2 class="text-light fw-semibold">Hola, soy Enzo Cruz</h2>
-            <p>Estudiante avanzado de la <span class="resaltado">Tecnicatura en Desarrollo de Software</span>, de Buenos Aires, Argentina. Actualmente en búsqueda de mi primer empleo en IT como Desarrollador Trainee / Junior.</p>
+        <div class="col-md-10 mx-auto">
+            <div class="perfil mx-auto">
+              <img src="/assets/img/fotoPerfil.PNG"/>
+            </div>
+            <h2 class="text-light fw-semibold mt-5">Hola, soy Enzo Cruz</h2>
+            <p><span class="resaltado">Desarrollador de software</span> y estudiante avanzado de la <span class="resaltado">Tecnicatura en Desarrollo de Software</span>, de Buenos Aires, Argentina. Actualmente en búsqueda de empleo en el sector IT como Trainee / Junior.</p>
             <div class="d-flex gap-3 mt-5">
-                <a class="btn rounded-5 shadow" target="_blank" href="https://github.com/Enzo887">
+                <a class="btn-outline rounded-5 shadow" target="_blank" href="https://github.com/Enzo887">
                     <i class="fa-brands fa-github"></i>
-                    GitHub</a>
-                <a class="btn rounded-5 shadow" target="_blank" href="https://www.linkedin.com/in/enzo-cruz-078248272/">
+                    GitHub
+                </a>
+                <a class="btn-outline rounded-5 shadow" target="_blank" href="https://linkedin.com/in/enzo-cruz-078248272">
                     <i class="fa-brands fa-linkedin"></i>
-                    Linkedin</a>
-                <a class="btn rounded-5 shadow" href="assets/CV - Enzo Cruz.pdf" download="CV - Enzo Cruz.pdf">
+                    Linkedin
+                </a>
+                <a class="btn-outline rounded-5 shadow" href="assets/CV - Enzo Cruz.pdf" target="_blank">
                     <i class="fa-solid fa-file-lines"></i>
-                    CV</a>
+                    CV
+                </a>
             </div>
         </div>
     </div>
@@ -58,47 +91,55 @@
 
 <section id="proyectos" class="container my-5">
     <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-10 mx-auto">
             
-            <h3 class="text-light fw-normal mb-4">
-                <i class="fa-solid fa-laptop-code"></i>
+            <h3 class="text-light fw-semibold mb-4 d-flex justify-content-center align-items-center">
                 Proyectos
             </h3>
 
             <div class="row g-4">
-                
-                <div class="col-12">
-                    <div class="card h-100">
-                        <div class="row g-0 align-items-center">
 
-                            <div class="col-md-3 text-center">
-                                <img src="./assets/img/api.png" class="img-fluid p-3 img-proyecto" alt="">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="card-title text-light">API REST de películas</h5>
-                                    <p class="card-text">
-                                        API REST de películas desarrollada con Node.js y Express, con arquitectura MVC y CRUD completo. Deployada en Render con fines educativos.   
-                                    </p>
-                                    <div class="d-flex gap-3">
-                                        <a target="_blank" href="https://github.com/Enzo887/rest-api-deploy"
-                                        class="btn">
-                                        Código
-                                        </a>
-                                        <a target="_blank" href="https://rest-api-deploy-w3sz.onrender.com"
-                                        class="btn">
-                                        Ver
-                                        </a>
-                                    </div>
+                <div class="col-12 d-flex justify-content-center" id="PanApp">
+                    <div class="card-proyecto text-center">
 
-                                </div>
-                            </div>
-
+                        <!-- Logo / Imagen -->
+                        <div class="logo-container">
+                        <img src="./assets/img/PanAppLogo.png" alt="PanApp Logo">
                         </div>
+
+                        <!-- Título -->
+                        <h2 class="titulo">PanApp</h2>
+
+                        <!-- Descripción -->
+                        <p class="descripcion">
+                        Aplicación web SSR desarrollada con Node.js, Express y EJS.
+                        Permite gestionar ingresos, egresos, ventas y ganancias,
+                        además de administrar precios mediante un CRUD.
+                        </p>
+
+                        <!-- Tecnologías -->
+                        <div class="tags tecnologia">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>EJS</span>
+                        <span>Supabase</span>
+                        <span>JavaScript</span>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="acciones">
+                        <a target="_blank" href="https://github.com/Enzo887/rest-api-deploy" class="btn-primary">
+                            Código
+                        </a>
+                        <a target="_blank" href="https://rest-api-deploy-w3sz.onrender.com" class="btn-primary">
+                            Ver Proyecto →
+                        </a>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-12">
+                <!-- <div class="col-12">
                     <div class="card h-100">
                         <div class="row g-0 align-items-center">
 
@@ -121,149 +162,119 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
     </div>
 </section>
 
-<section id="tecnologias" class="container my-5">
+<section id="tecnologias" class="container">
     <div class="row">
-        <div class="col-md-8 mx-auto text-light">
-            <h3 class="text-light fw-normal mb-4">
-                <i class="fa-solid fa-code"></i> Tecnologías
-            </h3>
-            <p>En mi trayectoria del desarrollo web durante mi carrera</p>
+        <div class="col-md-10 mx-auto text-light">
+            
             <div class="row justify-content-center g-4 flex-wrap">
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
+                 
+                <div class="col-12">
+                    <h3 class="text-light fw-semibold mb-4">
+                        Habilidades IT
+                    </h3> 
+                    <div class="card">
                         <div class="card-body">
-                            <h2 class="text-center text-light">Frontend</h2>
                             <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                                    <p class="text-center">HTML</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                                    <p class="text-center">CSS</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                    <p class="text-center">JavaScript</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
-                                    <p class="text-center">Bootstrap</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="text-center text-light">Backend</h2>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-                                    <p class="text-center">C#</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-                                    <p class="text-center">PHP</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-plain.svg" />
-                                    <p class="text-center">SQLite</p>
-                                </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-                                    <p class="text-center">SQL</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="text-center text-light">Aprendiendo</h2>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
+                                <div class="col-3 mx-auto tecnologia-item">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
                                     <p class="text-center">NodeJS</p>
                                 </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                                    <p class="text-center">ReactJS</p>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                                    <p class="text-center">C#</p>
                                 </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
-                                    <p class="text-center">MongoDB</p>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                    <p class="text-center">PHP</p>
                                 </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                    <p class="text-center">TypeScript</p>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" />
+                                    <p class="text-center">Documentación</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+                                    <p class="text-center">SQL</p>
+                                </div>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-plain.svg" />
+                                    <p class="text-center">SQLite</p>
+                                </div>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" />
+                                    <p class="text-center">SQLServer</p>
+                                </div>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                                    <p class="text-center">MySQL</p>
+                                </div>
 
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="text-center text-light">Herramientas</h2>
-                            <div class="row">
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                                    <p class="text-center">Git</p>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                    <p class="text-center">HTML</p>
                                 </div>
-                                <div class="col-6 mx-auto">
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                    <p class="text-center">CSS</p>
+                                </div>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                    <p class="text-center">JavaScript</p>
+                                </div>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
+                                    <p class="text-center">Bootstrap</p>
+                                </div>
+                                                                
+                                <div class="col-3 mx-auto tecnologia-item">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
                                     <p class="text-center">GitHub</p>
                                 </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-                                    <p class="text-center">VSCode</p>
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                                    <p class="text-center">Git</p>
+                                </div>                                
+                                <div class="col-3 mx-auto tecnologia-item">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                    <p class="text-center">C/C++</p>
                                 </div>
-                                <div class="col-6 mx-auto">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"/>
-                                    <p class="text-center">VS</p>
-                                </div>
-                                
+    
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>   
+
             </div>
-            
-            
         </div>
     </div>
 </section>
 
 <section id="sobreMi" class="container my-5">
     <div class="row">
-        <div class="col-md-8 mx-auto">
-            <h3 class="text-light fw-normal mb-4">
-                <i class="fa-regular fa-circle-user"></i>   
-                Sobre mi
+        <div class="col-md-10 mx-auto">
+            <h3 class="text-light fw-semibold mb-4">
+                    Sobre mi
             </h3>
             <p>
-                Mi nombre es Enzo Cruz, soy estudiante avanzado de la Tecnicatura en Desarrollo de Software (UPE), con 4 materias pendientes para finalizar la carrera.  Actualmente me encuentro en la <span class="resaltado">búsqueda de empleo en el sector IT</span> como Desarrollador Trainee / Junior.
-            </p>
-            <p>
-                 Me considero una persona responsable, proactiva y con muchas ganas de aprender, de aportar valor al equipo y seguir creciendo profesionalmente.
+                ¡Muchas gracias por llegar hasta aca!<br>
+                Te comento, soy estudiante avanzado de la Tecnicatura en Desarrollo de Software de la Universidad Provincial de Ezeiza (UPE), <span class="resaltado">con 4 materias para finalizar la carrera</span>.<br>
+                Actualmente me encuentro en la <span class="resaltado">búsqueda de empleo en el sector IT</span> como Trainee / Junior.
             </p>
             <p>
                 En paralelo <span class="resaltado">continúo formándome de manera autodidacta</span>, desarrollando proyectos propios y reforzando mis conocimientos. Busco una oportunidad donde pueda sumar experiencia real, aprender de otros desarrolladores y contribuir con compromiso y dedicación.
             </p>
+            <p>
+                 Me considero una persona responsable, proactiva y con muchas ganas de aprender, de aportar valor al equipo y seguir creciendo profesionalmente. Me gusta resolver problemas y entender el porqué esa solución sería la mejor.
+                 Soy detallista, tengo gusto en aprender y entender el porqué de las cosas para tener un mejor panorama del proyecto. 
+            </p>
+            
         </div>
     </div>
 </section>
